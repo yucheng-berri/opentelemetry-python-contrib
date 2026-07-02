@@ -66,6 +66,7 @@ dependencies = [
   "opentelemetry-util-genai",
   "opentelemetry-instrumentation-vertexai[instruments]",
   "opentelemetry-instrumentation-openai-v2[instruments]",
+  "opentelemetry-instrumentation-litellm[instruments]",
 ]
 
 
@@ -137,6 +138,7 @@ opentelemetry-util-http = { workspace = true }
 opentelemetry-util-genai = { workspace = true }
 opentelemetry-instrumentation-vertexai = { workspace = true }
 opentelemetry-instrumentation-openai-v2 = { workspace = true }
+opentelemetry-instrumentation-litellm = { workspace = true }
 
 # https://docs.astral.sh/uv/reference/settings/#workspace
 [tool.uv.workspace]
@@ -208,6 +210,7 @@ include = [
   "instrumentation-genai/opentelemetry-instrumentation-claude-agent-sdk",
   "instrumentation-genai/opentelemetry-instrumentation-vertexai",
   "instrumentation-genai/opentelemetry-instrumentation-langchain",
+  "instrumentation-genai/opentelemetry-instrumentation-litellm",
   "instrumentation-genai/opentelemetry-instrumentation-weaviate",
   "util/opentelemetry-util-genai",
   "exporter/opentelemetry-exporter-credential-provider-gcp",
@@ -230,6 +233,8 @@ exclude = [
   "instrumentation-genai/opentelemetry-instrumentation-vertexai/examples/**/*.py",
   "instrumentation-genai/opentelemetry-instrumentation-langchain/tests/**/*.py",
   "instrumentation-genai/opentelemetry-instrumentation-langchain/examples/**/*.py",
+  "instrumentation-genai/opentelemetry-instrumentation-litellm/tests/**/*.py",
+  "instrumentation-genai/opentelemetry-instrumentation-litellm/examples/**/*.py",
   "instrumentation-genai/opentelemetry-instrumentation-weaviate/tests/**/*.py",
   "instrumentation-genai/opentelemetry-instrumentation-weaviate/examples/**/*.py",
   "util/opentelemetry-util-genai/tests/**/*.py",

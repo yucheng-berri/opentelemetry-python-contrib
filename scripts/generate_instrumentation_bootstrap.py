@@ -73,6 +73,10 @@ packages_to_exclude = [
     # development. This filter will get removed once it is further along in its
     # development lifecycle and ready to be included by default.
     "opentelemetry-instrumentation-claude-agent-sdk",
+    # LiteLLM instrumentation is currently excluded because it is still in early
+    # development. This filter will get removed once it is further along in its
+    # development lifecycle and ready to be included by default.
+    "opentelemetry-instrumentation-litellm",
 ]
 
 # Static version specifiers for instrumentations that are released independently
@@ -80,6 +84,7 @@ independent_packages = {
     "opentelemetry-instrumentation-openai-v2": "",
     "opentelemetry-instrumentation-vertexai": ">=2.0b0",
     "opentelemetry-instrumentation-google-genai": "",
+    "opentelemetry-instrumentation-litellm": "",
 }
 
 

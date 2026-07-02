@@ -1,0 +1,5 @@
+litellm~=1.52.0
+
+opentelemetry-sdk~=1.36.0
+opentelemetry-exporter-otlp-proto-grpc~=1.36.0
+opentelemetry-instrumentation-litellm~=0.1b0
