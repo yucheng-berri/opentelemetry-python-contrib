@@ -63,3 +63,6 @@ components:
     - vasantteja
     - anirudha
     - MikeGoldsmith
+
+  instrumentation-genai/opentelemetry-instrumentation-litellm:
+    - yucheng-berri
